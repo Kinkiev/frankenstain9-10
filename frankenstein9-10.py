@@ -19,13 +19,13 @@ class Phone(Field):
 
 class Record:
     def __init__(self, name, phone=None):
-        self.name = Name(name)
+        self.name = name
         self.phones = []
         if phone is not None:
             self.add_phone(phone)
 
     def add_phone(self, phone):
-        self.phones.append(Phone(phone))
+        self.phones.append(phone)
 
     def remove_phone(self, phone):
         self.phones = [p for p in self.phones if str(p) != phone]
