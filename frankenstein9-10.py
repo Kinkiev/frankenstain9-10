@@ -95,7 +95,7 @@ ab = AddressBook()
 
 @input_error
 def add(name: str, phone: str) -> str:
-    record = Record(Name(name), Phone(phone))
+    record = Record(name, phone)
     ab.add_record(record)
     return "add success"
 
